@@ -5,6 +5,7 @@
     <title>Contact Us!</title>
     <meta name="description" content="AC/DC Band Discography Contact Form">
     <link rel="stylesheet" href="main.css">
+      <script src="js/scripts.js"></script>
   </head>
   <body>
     <header id="header">
@@ -19,7 +20,7 @@
         </nav>
     </header>
 
-<form id="questions" method="post" name="questions">
+<form id="questions" onsubmit="return validateForm()" method="post" name="questions">
   <h1 id="join">Join our Newsletter!</h1>
 
   <div id="name">
@@ -354,9 +355,7 @@
       <label for="agree">I Agree</label>
       <input id="agree" name="agree" type="checkbox" value="agree">
     </div>
-  <div id="button">
-    <a href="#" class="myButton">Join!</a>
-  </div>
+  <input type="submit" value="Join!" id="myButton">
 </form>
     <footer>
       <div id="footer">

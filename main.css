@@ -39,6 +39,7 @@ Black --------------- rgb(0,0,0)           #000000
     --deco-font: 'Squealer';
     --main-font: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, sans-serif;
     --white: #dcdcdc;
+    --hover: #f1dd38;
 }
 html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,
 textarea,pre,iframe,div,form,fieldset,hr,h1,h2,h3,h4,h5,h6,button,
@@ -204,18 +205,19 @@ img {max-width: 100%;}
     height: 225px;
 }
 #members h2 {
-    font: 2em var(--deco-font);
+    font: 1.5em var(--main-font);
+    font-weight: 700;
+    text-transform: uppercase;
     text-align: center;
     text-shadow: 1px 1px rgba(243,34,22,.7);
     color: #dcdcdc;
 }
 div > .members:hover {
     opacity: 1;
-    font-size: inherit;
-    font-family: var(--deco-font);
+    font: inherit var(--main-font);
     text-align: center;
     text-shadow: 1px 1px rgba(243,34,22,.7);
-    color: #dcdcdc;
+    color: var(--hover);
     box-shadow:inset 0px 0px 0px 3px rgba(243,34,22,.7);
 }
 .text {
@@ -225,6 +227,10 @@ div > .members:hover {
 #albums {
     grid-column: 1/5;
     grid-row: 6/7;
+}
+#albums h2 {
+    font: 1.5em var(--main-font);
+    font-weight: 700;
 }
 #albumsA, #albumsB {
     display: flex;
@@ -247,7 +253,6 @@ div > .members:hover {
 .highwaytohell, .backinblack,
 .tnt, .dirtydeeds {
     margin: 2em 5px 0;
-/*    border: 2px solid rgba(128,128,128,.7);*/
 }
 #albumsA ul, #albumsB ul {margin: .1em 0 0 2em;}
 #albumsA li, #albumsB li {margin: .4em 0;}
