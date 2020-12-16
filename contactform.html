@@ -5,7 +5,6 @@
     <title>Contact Us!</title>
     <meta name="description" content="AC/DC Band Discography Contact Form">
     <link rel="stylesheet" href="main.css">
-      <script src="js/scripts.js"></script>
   </head>
   <body>
     <header id="header">
@@ -25,9 +24,10 @@
 
   <div id="name">
     <label for="firstname">First Name</label>
-    <input id="firstname" name="name" type="text" placeholder="John">
+      <span id="error-name"></span>
+    <input id="firstname" name="firstname" type="text" placeholder="John">
     <label for="lastname">Last Name</label>
-    <input id="lastname" name="name" type="text" placeholder="Smith">
+    <input id="lastname" name="lastname" type="text" placeholder="Smith">
     <p>Date of Birth</p>
     <select id="month" name="Month">
       <option value="month">Month</option>
@@ -373,5 +373,6 @@
     <div id="copyright">
       <p>Copyright &#169; 2019 Ducky Designs</p>
     </div>
+        <script type="text/javascript" src="js/scripts.js" charset="utf-8"></script>
   </body>
 </html>
