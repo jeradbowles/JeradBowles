@@ -19,14 +19,15 @@
         </nav>
     </header>
 
-<form id="questions" method="post" name="questions">
+<form id="questions" onsubmit="return validateForm()" method="post" name="questions">
   <h1 id="join">Join our Newsletter!</h1>
 
   <div id="name">
     <label for="firstname">First Name</label>
-    <input id="firstname" name="name" type="text" placeholder="John">
+      <span id="error-name"></span>
+    <input id="firstname" name="firstname" type="text" placeholder="John">
     <label for="lastname">Last Name</label>
-    <input id="lastname" name="name" type="text" placeholder="Smith">
+    <input id="lastname" name="lastname" type="text" placeholder="Smith">
     <p>Date of Birth</p>
     <select id="month" name="Month">
       <option value="month">Month</option>
@@ -354,9 +355,7 @@
       <label for="agree">I Agree</label>
       <input id="agree" name="agree" type="checkbox" value="agree">
     </div>
-  <div id="button">
-    <a href="#" class="myButton">Join!</a>
-  </div>
+  <input type="submit" value="Join!" id="myButton">
 </form>
     <footer>
       <div id="footer">
@@ -374,5 +373,6 @@
     <div id="copyright">
       <p>Copyright &#169; 2019 Ducky Designs</p>
     </div>
+        <script src="js/scripts.js"></script>
   </body>
 </html>
